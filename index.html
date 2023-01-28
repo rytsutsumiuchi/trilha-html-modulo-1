@@ -10,52 +10,143 @@
     <h1>Módulo 1 - Primeiros Passos com HTML</h1>
     <hr />
 
-    <h2>Índice</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste índice você deve colocar os tópicos que mais entendeu. Estes apenas são sugestões.</p>
+    <h2 id="indice">Índice</h2>
+    
     <ul>
-        <li><a href="#">História dos computadores</a></li>
-        <li><a href="#">O que são <i>Clients</i>?</a></li>
-        <li><a href="#">O que são <i>Servers</i>?</a></li>
-        <li><a href="#">Como é uma estrutura básica de um HTML?</a></li>
-        <li><a href="#">Entendendo a diferença entre listas ordenadas e não ordenadas</a></li>
-        <li><a href="#">Links de referências</a></li>
+        <li><a href="#html">Como é uma estrutura básica de um HTML?</a></li>
+        <li><a href="#tags">Tags básicas</a></li>
+        <li><a href="#listas">Entendendo a diferença entre listas ordenadas e não ordenadas</a></li>
+        <li><a href="#referencias">Links de referências</a></li>
     </ul>
 
-    <h2>História dos computadores</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+    <h2 id="html">Como é uma estrutura básica de um HTML?</h2>
+    <small><a href="#indice">(Voltar)</a></small>
 
-    <h2>O que são <i>Clients</i>?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+    <p>A estrutura básica de um HTML é formada pelas tags <b>&lt;html&gt;</b>, <b>&lt;head&gt;</b> e <b>&lt;body&gt;</b> no seguinte formato:</p>
 
-    <h2>O que são <i>Servers</i>?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+    <pre>
+      &lt;html&gt;   
+            [Essa tag é o container para todos os outros elementos HTML]
+      &lt;head&gt;   
+            [Essa tag contém os dados sobre o arquivo HTML como o título da página, estilos usados, scripts entro outros]
+      &lt;/head&gt;  
+      &lt;body&gt;   
+            [Essa tag contém o corpo do documento. Tudo o que é exibido para o usuário fica aqui]
+      &lt;/body&gt;
+      &lt;/html&gt;
+    </pre>
 
-    <h2>Como é uma estrutura básica de um HTML?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+    <h2 id="tags">Tags básicas</h2>
+    <small><a href="#indice">(Voltar)</a></small>
 
-    <h2>Entendendo a diferença entre listas ordenadas e não ordenadas</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
-
-    <h2>Links de referências</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Coloque links para outras páginas que falam sobre estes assuntos. Não esquece de que precisa abrir em outra aba/janela do navegador.</p>
+    <p>Nesse módulo do curso foram apresentadas as seguintes tag básicas:</p>
+    
     <ul>
-        <li><a href="#">http://dio.me</a></li>
-        <li><a href="#">http://w3c.org</a></li>
+      <li><b>&lt;h1&gt; ... &lt;h6&gt; :</b> Representam as <i><b>headings</b></i> ou títulos, tendo o maior destaque o &lt;h1&gt; e o menor destaque o &lt;h6&gt;. <br>
+         <h1>H1</h1> <h2>H2</h2> <h3>H3</h3> <h4>H4</h4> <h5>H5</h5> <h6>H6</h6>
+      </li>
+
+      <li><b>&lt;p&gt; :</b> Define um <i><b>parágrafo</b></i>. <br>
+         <p>Este é um parágrafo.</p>
+         <p>Este é outro parágrafo.</p>
+      </li>
+
+      <li><b>&lt;mark&gt; :</b> <i><b>Marca</b></i> trechos do texto. <br>
+         <p><mark>Trecho marcado.</mark></p>  
+      </li>
+
+      <li><b>&lt;small&gt; :</b> Deixa o texto <i><b>menor</b></i>. <br>
+         <p><small>Texto com tamanho menor.</small></p>
+      </li>
+
+      <li><b>&lt;i&gt; :</b> Deixa o texto em <i><b>itálico</b></i>. <br>
+         <p><i>Texto em itálico.</i></p> 
+      </li>
+
+      <li><b>&lt;u&gt; :</b> Deixa o texto <i><b>underlined</b></i> ou sublinhado. <br>
+         <p><u>Texto sublinhado.</u></p> 
+      </li>
+
+      <li><b>&lt;b&gt; :</b> Deixa o texto <i><b>bold</b></i> ou negrito. <br>
+         <p><b>Texto em negrito.</b></p> 
+      </li>
+
+      <li><b>&lt;strong&gt; :</b> É usado para indicar importância ao texto. Tem o mesmo efeito visual do &lt;b&gt;. <br>
+         <p><strong>Texto importante!</strong></p>
+      </li>
+
+      <li><b>&lt;hr&gt; :</b> Traça uma <i><b>horizontal rule</b></i> ou régua horizontal. É usada para separar temas dentro de um texto. <br>
+         <h2>Tema 1</h2> 
+         <hr>
+         <h2>Tema 2</h2>
+      </li>
+
+      <li><b>&lt;sub&gt;</b> e <b>&lt;sup&gt; :</b> Deixam o texto <i><b>subscript</b></i> (subscrito) e <i><b>superscript</b></i> (sobrescrito) respectivamente. <br>
+         <p>Texto <sub>subscrito</sub> aqui.</p> 
+         <p>Texto <sup>sobrescrito</sup> aqui.</p>
+      </li>
+
+      <li><b>&lt;blockquote&gt; :</b> Usado para escrever citações, deixando o texto indentado.<br>
+         <p>A seguir um texto citado:</p> 
+         <blockquote>Este texto é uma citação.</blockquote>
+      </li>
+
+      <li><b>&lt;a&gt; :</b> Define uma <i><b>âncora</b></i>, ou seja, define um link para uma outra página ou posição na mesma página. É usado o atributo "href" para definir o link.<br>
+         <p>Este <a href="http://dio.me" target="_blank">link</a> leva para o site da DIO.</p>
+         <p>Este <a href="#tags">link</a> leva para a seção "Tags básicas".</p>
+      </li>
+    </ul>
+    
+
+    <h2 id="listas">Entendendo a diferença entre listas ordenadas e não ordenadas</h2>
+    <small><a href="#indice">(Voltar)</a></small>
+
+    <p>Existem dois tipos de listas, as <u>ordenadas</u> (<i><b>ol - ordered list</b></i>) e as <u>não ordenadas</u> (<i><b>ul - unordered list</b></i>).</p>
+
+    <p>A primeira é usada quando se quer apresentar uma ordem na lista, que pode ser por número ou letra.</p>
+
+    <ol>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </ol>
+
+    <ol type="a">
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </ol>
+    
+    <p>A segunda não indica uma ordem, e cada item só é precedido por um ponto. </p>
+    
+    <ul>
+      <li>Item</li>
+      <li>Item</li>
+      <li>Item</li>
+    </ul>
+
+    <p>A estrutura de listas é a seguinte:</p>
+
+    <pre>
+      &lt;ol&gt;              [&lt;ul&gt; no caso de listas não ordenadas]
+         &lt;li&gt;           [São os <b>list items</b> ou itens da lista]
+            Item 1      [Cada item deve ser inserido dentro de uma tag &lt;li&gt;&lt;/li&gt;]
+         &lt;/li&gt;
+         &lt;li&gt;
+            Item 2         
+         &lt;/li&gt;
+         &lt;li&gt;
+            Item 3         
+         &lt;/li&gt;
+      &lt;/ol&gt;           [&lt;/ul&gt; no caso de listas não ordenadas] 
+    </pre>
+
+    <h2 id="referencias">Links de referências</h2>
+    <small><a href="#indice">(Voltar)</a></small>
+    <ul>
+        <li><a target="_blank" href="http://dio.me">http://dio.me</a></li>
+        <li><a target="_blank" href="http://w3c.org">http://w3c.org</a></li>
+        <li><a target="_blank" href="https://www.w3schools.com/">https://www.w3schools.com/</a></li>
     </ul>
 
 </body>
